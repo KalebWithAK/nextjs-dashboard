@@ -22,7 +22,6 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
 
   return (
     <>
-
       <div className="inline-flex">
         <PaginationArrow
           direction="left"
@@ -41,7 +40,7 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
 
             return (
               <PaginationNumber
-                key={page}
+                key={index}
                 href={createPageURL(page)}
                 page={page}
                 position={position}
